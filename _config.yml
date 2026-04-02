@@ -1,6 +1,6 @@
 # Site settings
 name: Diptamay Sanyal
-email: me@diptamay.com
+email: diptamay@goleap.ai
 #canonical_url: https://edwinexemplar.com
 keywords: "Java, Scala, Akka, Golang, AI, LLM, OpenAI, Machine Learning, Startups, Aerospike, Node.js, Vert.x, Spring, gRPC, REST, Spark, Kafka, Airflow, Metabase, Bigquery, Databricks, LlamaIndex, Chroma, ElasticSearch, DynamoDB, Redis, SQS, EC2, EMR, ECS, Pubsub, App Engine"
 skills: "Lead | Architect | Engineer | AI | Distributed Systems, NJ/NYC Metro Area"
@@ -13,8 +13,8 @@ social:
     url: https://www.linkedin.com/in/diptamay/
   - title: medium
     url: https://medium.com/@diptamay
-#  - title: twitter
-#    url: https://twitter.com/diptamay
+  - title: twitter
+    url: https://twitter.com/diptamay
   - title: github
     url: https://github.com/diptamay
 
