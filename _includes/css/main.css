@@ -22,7 +22,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #{{ site.color.primary }};
+    color: #{{ site.color.accent }};
 }
 
 h1,
@@ -70,12 +70,12 @@ hr.star-light:after {
 }
 
 hr.star-primary {
-    border-color: #{{ site.color.secondary }};
+    border-color: #{{ site.color.accent }};
 }
 
 hr.star-primary:after {
-    color: #{{ site.color.secondary }};
-    background-color: #fff;
+    color: #{{ site.color.accent }};
+background-color: #fff;
 }
 
 .img-centered {
@@ -154,6 +154,17 @@ header .intro-text .skills {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
+    background-color: #{{ site.color.primary }} !important;
+}
+
+.navbar a,
+.navbar .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar a:hover,
+.navbar a:focus {
+    color: #{{ site.color.accent }} !important;
 }
 
 .navbar a:focus {
@@ -272,7 +283,20 @@ section.tout {
 .btn-outline.active {
     border: solid 2px #fff;
     color: #{{ site.color.primary }};
-    background: #fff;
+background: #fff;
+}
+
+.btn-default {
+    border-color: #{{ site.color.accent }};
+color: #{{ site.color.accent }};
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active {
+    background-color: #{{ site.color.accent }};
+border-color: #{{ site.color.accent }};
+color: #fff;
 }
 
 .floating-label-form-group {
@@ -324,7 +348,7 @@ section.tout {
 }
 
 .floating-label-form-group-with-focus label {
-    color: #{{ site.color.primary }};
+    color: #{{ site.color.accent }};
 }
 
 form .row:first-child .floating-label-form-group {
@@ -351,6 +375,10 @@ footer .footer-col {
 footer .footer-below {
     padding: 25px 0;
     background-color: #{{ site.color.secondary-dark }};
+}
+
+footer a {
+    color: #{{ site.color.accent }};
 }
 
 .btn-social {
@@ -386,6 +414,13 @@ footer .footer-below {
     border-radius: 100%;
     font-size: 20px;
     line-height: 28px;
+    background-color: #{{ site.color.accent }};
+border-color: #{{ site.color.accent }};
+}
+
+.scroll-top .btn:hover {
+    background-color: #{{ site.color.primary }};
+border-color: #{{ site.color.primary }};
 }
 
 .scroll-top .btn:focus {
@@ -436,9 +471,9 @@ footer .footer-below {
     height: 75px;
     margin-left: 35px;
     background-color: #{{ site.color.secondary }};
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
 }
 
 .portfolio-modal .close-modal .lr .rl {
@@ -446,9 +481,9 @@ footer .footer-below {
     width: 1px;
     height: 75px;
     background-color: #{{ site.color.secondary }};
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
+-webkit-transform: rotate(90deg);
+-ms-transform: rotate(90deg);
+transform: rotate(90deg);
 }
 
 .navbar-nav>.active>a {
@@ -472,40 +507,55 @@ header .intro-text .name {
     font-size: 2.25em;
 }
 
+/* Section heading colors */
+section h2,
+section h3 {
+    color: #{{ site.color.primary }};
+}
+
+/* HR in sections */
+section hr {
+    border-top-color: #{{ site.color.accent }};
+}
+
 @media (max-width: 991px) {
     .navbar-header {
         float: none;
     }
     .navbar-toggle {
         display: block;
-    }
-    .navbar-collapse {
-        border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-    }
-    .navbar-collapse.collapse {
-        display: none!important;
-    }
-    .navbar-nav {
-        float: none!important;
-        margin: 7.5px -15px;
-    }
-    .navbar-nav>li {
-        float: none;
-    }
-    .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .navbar-text {
-        float: none;
-        margin: 15px 0;
-    }
-    /* since 3.1.0 */
-    .navbar-collapse.collapse.in { 
-        display: block!important;
-    }
-    .collapsing {
-        overflow: hidden!important;
-    }
+        border-color: #{{ site.color.accent }};
+}
+.navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+}
+.navbar-collapse.collapse {
+    display: none!important;
+}
+.navbar-nav {
+    float: none!important;
+    margin: 7.5px -15px;
+}
+.navbar-nav>li {
+    float: none;
+}
+.navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.navbar-text {
+    float: none;
+    margin: 15px 0;
+}
+/* since 3.1.0 */
+.navbar-collapse.collapse.in {
+    display: block!important;
+}
+.collapsing {
+    overflow: hidden!important;
+}
 }
