@@ -20,13 +20,13 @@ google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:
 
-# Color settings (hex-codes without the leading hash-tag)
+# Color settings - Dark navy cybersecurity theme
 color:
-  primary: 2196F3
-  primary-rgb: "33, 150, 243"
-  secondary: 285172
-  secondary-dark: 29455b
-  section-tout: eaf1f1
+  primary: 0A2540
+  primary-rgb: "10, 37, 64"
+  secondary: 163B5C
+  secondary-dark: 071A30
+  section-tout: EDF2F7
 
 # Build settings
 markdown: kramdown
